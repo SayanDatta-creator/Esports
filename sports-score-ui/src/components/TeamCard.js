@@ -1,11 +1,16 @@
 import React from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 const TeamCard = ({ team }) => (
-  <div className="team-card">
-    <h3>{team.name}</h3>
-    <p>Wins: {team.wins}</p>
-    <p>Losses: {team.losses}</p>
-  </div>
+  <Card sx={{ mb: 2 }}>
+    <CardContent>
+      <Typography variant="h6">{team.name}</Typography>
+      <Typography color="text.secondary">Wins: {team.wins}</Typography>
+      <Typography color="text.secondary">Losses: {team.losses}</Typography>
+    </CardContent>
+  </Card>
 );
 
 export default TeamCard;

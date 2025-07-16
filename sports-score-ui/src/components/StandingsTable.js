@@ -1,26 +1,35 @@
 import React from 'react';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
 const StandingsTable = ({ teams }) => (
-  <table className="standings-table">
-    <thead>
-      <tr>
-        <th>Position</th>
-        <th>Team</th>
-        <th>W</th>
-        <th>L</th>
-      </tr>
-    </thead>
-    <tbody>
-      {teams.map((team, index) => (
-        <tr key={team.id}>
-          <td>{index + 1}</td>
-          <td>{team.name}</td>
-          <td>{team.wins}</td>
-          <td>{team.losses}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
+  <TableContainer component={Paper} sx={{ mt: 2 }}>
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell>Position</TableCell>
+          <TableCell>Team</TableCell>
+          <TableCell>W</TableCell>
+          <TableCell>L</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {teams.map((team, index) => (
+          <TableRow key={team.id}>
+            <TableCell>{index + 1}</TableCell>
+            <TableCell>{team.name}</TableCell>
+            <TableCell>{team.wins}</TableCell>
+            <TableCell>{team.losses}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+  </TableContainer>
 );
 
 export default StandingsTable;

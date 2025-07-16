@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 
 const ScoreForm = ({ matchId, onSubmit }) => {
   const [scores, setScores] = useState({ score1: 0, score2: 0 });
@@ -9,25 +13,25 @@ const ScoreForm = ({ matchId, onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="score-form">
-      <label>
-        Team 1 Score:
-        <input 
-          type="number" 
+    <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1, p: 2, border: '1px solid #eee', borderRadius: 2 }}>
+      <Stack spacing={2}>
+        <TextField
+          label="Team 1 Score"
+          type="number"
           value={scores.score1}
-          onChange={(e) => setScores({...scores, score1: parseInt(e.target.value) || 0})}
+          onChange={e => setScores({ ...scores, score1: parseInt(e.target.value) || 0 })}
+          fullWidth
         />
-      </label>
-      <label>
-        Team 2 Score:
-        <input 
-          type="number" 
+        <TextField
+          label="Team 2 Score"
+          type="number"
           value={scores.score2}
-          onChange={(e) => setScores({...scores, score2: parseInt(e.target.value) || 0})}
+          onChange={e => setScores({ ...scores, score2: parseInt(e.target.value) || 0 })}
+          fullWidth
         />
-      </label>
-      <button type="submit">Update Score</button>
-    </form>
+        <Button type="submit" variant="contained" color="primary">Update Score</Button>
+      </Stack>
+    </Box>
   );
 };
 

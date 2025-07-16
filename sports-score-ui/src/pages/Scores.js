@@ -1,47 +1,51 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 import MatchCard from '../components/MatchCard';
 import ScoreForm from '../components/ScoreForm';
-import { getScores, updateScore } from '../services/mockApi';
+
+const dummyMatches = [
+  { id: 1, team1: 'Team A', team2: 'Team B', score1: 3, score2: 2, isLive: true },
+  { id: 2, team1: 'Team C', team2: 'Team D', score1: 0, score2: 0, isLive: true },
+];
 
 const Scores = () => {
-  const [matches, setMatches] = useState([]);
+  const [matches, setMatches] = useState(dummyMatches);
   const [selectedMatch, setSelectedMatch] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await getScores();
-      setMatches(data);
-    };
-    fetchData();
-  }, []);
-
-  const handleUpdateScore = async (matchId, score1, score2) => {
-    await updateScore(matchId, score1, score2);
-    const updatedMatches = await getScores();
-    setMatches(updatedMatches);
+  const handleUpdateScore = (matchId, score1, score2) => {
+    setMatches(matches => matches.map(m => m.id === matchId ? { ...m, score1, score2 } : m));
     setSelectedMatch(null);
   };
 
   return (
-    <div className="page">
-      <h1>Match Scores</h1>
-      <div className="matches-container">
+    <Container maxWidth="md" sx={{ mt: 4 }}>
+      <Typography variant="h4" gutterBottom>Match Scores</Typography>
+      <Grid container spacing={2}>
         {matches.map(match => (
-          <div key={match.id}>
+          <Grid item xs={12} sm={6} md={4} key={match.id}>
             <MatchCard match={match} />
-            <button onClick={() => setSelectedMatch(selectedMatch === match.id ? null : match.id)}>
+            <Button
+              variant={selectedMatch === match.id ? 'outlined' : 'contained'}
+              color="primary"
+              sx={{ mt: 1, mb: 1 }}
+              onClick={() => setSelectedMatch(selectedMatch === match.id ? null : match.id)}
+              fullWidth
+            >
               {selectedMatch === match.id ? 'Cancel' : 'Edit Score'}
-            </button>
+            </Button>
             {selectedMatch === match.id && (
               <ScoreForm 
                 matchId={match.id} 
                 onSubmit={handleUpdateScore} 
               />
             )}
-          </div>
+          </Grid>
         ))}
-      </div>
-    </div>
+      </Grid>
+    </Container>
   );
 };
 

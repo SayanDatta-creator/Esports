@@ -1,24 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 import StandingsTable from '../components/StandingsTable';
-import { getStandings } from '../services/mockApi';
+
+const dummyTeams = [
+  { id: 1, name: 'Team A', wins: 5, losses: 2 },
+  { id: 2, name: 'Team B', wins: 4, losses: 3 },
+  { id: 3, name: 'Team C', wins: 6, losses: 1 },
+];
 
 const Standings = () => {
-  const [teams, setTeams] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await getStandings();
-      // Sort by wins descending
-      setTeams(data.sort((a, b) => b.wins - a.wins));
-    };
-    fetchData();
-  }, []);
+  const [teams] = useState(dummyTeams);
 
   return (
-    <div className="page">
-      <h1>Standings</h1>
+    <Container maxWidth="md" sx={{ mt: 4 }}>
+      <Typography variant="h4" gutterBottom>Standings</Typography>
       <StandingsTable teams={teams} />
-    </div>
+    </Container>
   );
 };
 
