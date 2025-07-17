@@ -1,0 +1,49 @@
+/* Home.css */
+
+.home-container {
+  margin-top: 32px;
+}
+
+.home-title {
+  font-weight: 700;
+}
+
+.home-banner-paper {
+  padding: 0;
+  margin-bottom: 32px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.home-banner-box {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+}
+@media (max-width: 900px) {
+  .home-banner-box {
+    height: 280px;
+  }
+}
+@media (max-width: 600px) {
+  .home-banner-box {
+    height: 180px;
+  }
+}
+
+.home-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-featured-box {
+  margin-bottom: 32px;
+}
+
+.home-news-box {
+} 

@@ -1,0 +1,58 @@
+/* Navbar.css */
+
+.navbar-toolbar {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.navbar-links-box {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar-link-btn {
+  text-transform: none !important;
+  font-weight: 500 !important;
+}
+
+.navbar-auth-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-menu-paper {
+  padding: 16px !important;
+  min-width: 320px !important;
+}
+
+.navbar-auth-submit-btn {
+  margin-top: 16px !important;
+}
+
+.navbar-auth-switch-box {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.navbar-auth-switch-btn {
+  text-transform: none !important;
+}
+
+/* Make the navbar fixed */
+.MuiAppBar-root {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1200;
+}
+
+/* Add padding to the main content to prevent it from being hidden */
+.app > .content {
+  padding-top: 72px; /* Adjust if your navbar is taller/shorter */
+} 
