@@ -1,0 +1,45 @@
+/* MatchCard.css */
+
+.match-card {
+  position: relative;
+  margin-bottom: 16px;
+  background: #32343a;
+  color: white;
+  border-radius: 16px;
+}
+.match-card-live {
+  border-left: 5px solid #ff1744;
+}
+.match-card-stack {
+  min-height: 100px;
+}
+.match-card-team-box {
+  text-align: center;
+  min-width: 90px;
+}
+.match-card-team-name {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.match-card-score {
+  font-weight: 700;
+}
+.match-card-divider {
+  border-color: #444 !important;
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+.match-card-vs {
+  margin-top: 8px;
+  color: #b0b0b0;
+  font-weight: 500;
+}
+.match-card-live-chip {
+  position: absolute !important;
+  top: 12px;
+  right: 16px;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+} 

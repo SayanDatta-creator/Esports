@@ -1,0 +1,13 @@
+/* Article.css */
+
+.article-container {
+  margin-top: 32px;
+}
+
+.article-paper {
+  padding: 24px;
+}
+
+.article-title {
+  font-weight: 700;
+} 
