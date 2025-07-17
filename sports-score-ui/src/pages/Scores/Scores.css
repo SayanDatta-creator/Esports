@@ -1,0 +1,18 @@
+/* Scores.css */
+
+.scores-container {
+  margin-top: 32px;
+}
+
+.scores-title {
+  font-weight: 700;
+}
+
+.scores-edit-btn {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.scores-edit-btn-outlined {
+  /* Additional styles for outlined variant if needed */
+} 

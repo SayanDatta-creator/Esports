@@ -1,0 +1,64 @@
+/* Fixtures.css */
+
+.fixtures-container {
+  margin-top: 32px;
+}
+
+.fixtures-tabs-box {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.fixtures-content-box {
+  margin-top: 16px;
+}
+
+.fixtures-table-container {
+  margin-top: 16px;
+}
+
+.fixtures-table-header {
+  font-weight: 700 !important;
+}
+
+.fixtures-time-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fixtures-time-icon {
+  color: #b0b0b0;
+}
+
+.fixtures-team-cell {
+  min-width: 120px;
+}
+
+.fixtures-flag {
+  font-size: 22px;
+}
+
+.fixtures-score-cell {
+  font-weight: 700 !important;
+  font-size: 18px !important;
+}
+
+.fixtures-score-dash {
+  color: #888;
+}
+
+.fixtures-countdown-chip {
+  margin-left: 8px !important;
+}
+
+.fixtures-event-title {
+  font-weight: 600 !important;
+}
+
+.fixtures-date-label {
+  margin-bottom: 8px;
+}
+
+.fixtures-today-chip {
+  margin-left: 8px !important;
+} 

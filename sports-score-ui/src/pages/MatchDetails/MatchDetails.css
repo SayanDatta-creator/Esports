@@ -1,0 +1,18 @@
+/* MatchDetails.css */
+
+.match-details-container {
+  margin-top: 32px;
+}
+
+.match-details-title {
+  font-weight: 700;
+}
+
+.match-details-paper {
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.match-details-info-box {
+  margin-top: 16px;
+} 
