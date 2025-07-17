@@ -1,0 +1,6 @@
+[submodule "sports-score-be"]
+	path = sports-score-be
+	url = ./sports-score-be/
+[submodule "sports-score-ui"]
+	path = sports-score-ui
+	url = ./sports-score-ui/
