@@ -1,29 +1,28 @@
-🎮 Esports Valorant Central
-A full-stack web application that provides information about Valorant Esports, including matches, rankings, player stats, and news updates.
+<h2>🎮 Esports Valorant Central</h2>
+<h4>A full-stack web application that provides information about Valorant Esports, including matches, rankings, player stats, and news updates.</h4>
 
-<!-- Optional: You can use the uploaded image here -->
 
-📌 Features
-✅ Home Page with featured matches & latest news
-✅ Matches section with upcoming and past games
-✅ Rankings for teams and players
-✅ Player Profiles with detailed stats
-✅ Authentication (Login & Signup)
-✅ Responsive, dark-themed UI for an esports look
+📌 Features<br />
+✅ Home Page with featured matches & latest news<br />
+✅ Matches section with upcoming and past games<br />
+✅ Rankings for teams and players<br />
+✅ Player Profiles with detailed stats<br />
+✅ Authentication (Login & Signup)<br />
+✅ Responsive, dark-themed UI for an esports look<br />
 
 🛠️ Tech Stack
-Frontend (UI):
+<h4>Frontend (UI):</h4>
 
-React.js
+<i>React.js</i>
 
-Tailwind CSS / CSS Modules
+<i>CSS Modules / Material UI</i>
 
-Axios (for API calls)
+<i>Axios (for API calls)</i>
 
-Backend (BE):
+<h4>Backend (BE):</h4>
 
-Python
+<i>Python</i>
 
-MongoDB (or any database of your choice)
+<i>MongoDB</i>
 
-JWT for Authentication
+<i>JWT for Authentication</i>
