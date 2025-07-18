@@ -4,7 +4,7 @@
   background: #fff;
   padding: 2.5rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   width: 100%;
   max-width: 500px;
   display: flex;
@@ -96,7 +96,7 @@
 
 .divider:before,
 .divider:after {
-  content: '';
+  content: "";
   flex: 1;
   height: 1px;
   background: #e0e0e0;
@@ -118,7 +118,7 @@
 }
 
 .facebook-btn {
-  background: #4267B2;
+  background: #4267b2;
   color: #fff;
 }
 
@@ -146,4 +146,4 @@
     padding: 1.5rem 0.5rem;
     max-width: 95vw;
   }
-} 
+}

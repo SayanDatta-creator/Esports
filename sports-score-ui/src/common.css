@@ -20,7 +20,7 @@
 body {
   background: var(--color-bg);
   color: var(--color-text);
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .text-center {
@@ -43,18 +43,42 @@ body {
   font-weight: var(--font-weight-medium) !important;
 }
 
-.mt-1 { margin-top: 8px !important; }
-.mt-2 { margin-top: 16px !important; }
-.mt-3 { margin-top: 24px !important; }
-.mb-1 { margin-bottom: 8px !important; }
-.mb-2 { margin-bottom: 16px !important; }
-.mb-3 { margin-bottom: 24px !important; }
-.pt-1 { padding-top: 8px !important; }
-.pt-2 { padding-top: 16px !important; }
-.pt-3 { padding-top: 24px !important; }
-.pb-1 { padding-bottom: 8px !important; }
-.pb-2 { padding-bottom: 16px !important; }
-.pb-3 { padding-bottom: 24px !important; }
+.mt-1 {
+  margin-top: 8px !important;
+}
+.mt-2 {
+  margin-top: 16px !important;
+}
+.mt-3 {
+  margin-top: 24px !important;
+}
+.mb-1 {
+  margin-bottom: 8px !important;
+}
+.mb-2 {
+  margin-bottom: 16px !important;
+}
+.mb-3 {
+  margin-bottom: 24px !important;
+}
+.pt-1 {
+  padding-top: 8px !important;
+}
+.pt-2 {
+  padding-top: 16px !important;
+}
+.pt-3 {
+  padding-top: 24px !important;
+}
+.pb-1 {
+  padding-bottom: 8px !important;
+}
+.pb-2 {
+  padding-bottom: 16px !important;
+}
+.pb-3 {
+  padding-bottom: 24px !important;
+}
 
 .rounded {
   border-radius: var(--border-radius) !important;
@@ -73,4 +97,4 @@ body {
 .bg-white {
   background: var(--color-white) !important;
   color: var(--color-text) !important;
-} 
+}

@@ -1,18 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Standings from './pages/Standings/Standings';
-import Scores from './pages/Scores/Scores';
-import Home from './pages/Home/Home';
-import Fixtures from './pages/Fixtures/Fixtures';
-import Rankings from './pages/Rankings/Rankings';
-import Players from './pages/Players/Players';
-import Stats from './pages/Stats/Stats';
-import MatchDetails from './pages/MatchDetails/MatchDetails';
-import News from './pages/News/News';
-import Article from './pages/Article/Article';
-import Login from './pages/Login/Login';
-import Signup from './pages/Signup/Signup';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Standings from "./pages/Standings/Standings";
+import Scores from "./pages/Scores/Scores";
+import Home from "./pages/Home/Home";
+import Fixtures from "./pages/Fixtures/Fixtures";
+import Rankings from "./pages/Rankings/Rankings";
+import Players from "./pages/Players/Players";
+import Stats from "./pages/Stats/Stats";
+import MatchDetails from "./pages/MatchDetails/MatchDetails";
+import News from "./pages/News/News";
+import Article from "./pages/Article/Article";
+import Login from "./pages/Login/Login";
+import Signup from "./pages/Signup/Signup";
 
 function App() {
   return (
