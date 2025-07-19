@@ -1,4 +1,3 @@
-from typing import Dict
 from models.user import LoginResponse, SignupResponse, UserInDB, UserLogin, UserSignup
 from repositories.user_repo import create_user, find_user_by
 from passlib.context import CryptContext
