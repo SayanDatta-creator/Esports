@@ -6,4 +6,11 @@
 ./repositories/__pycache__/
 ./models/__pycache__/
 ./tests/__pycache__/
-*.pyc
+sports-score-be/app/__pycache__/*
+sports-score-be/app/__pycache__/*
+sports-score-be/app/utils/__pycache__/*
+sports-score-be/app/__pycache__/*
+sports-score-be/app/__pycache__/*
+sports-score-be/app/__pycache__/*
+sports-score-be/app/__pycache__/*
+./.ruff_cache/*
