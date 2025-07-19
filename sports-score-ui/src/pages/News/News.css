@@ -16,12 +16,14 @@
   border-radius: 18px;
   background: #23272f;
   color: #fff;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  transition: box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
   margin-bottom: 0;
 }
 .news-thread-card:not(.stickied):hover {
-  box-shadow: 0 4px 24px rgba(0,0,0,0.16);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16);
   transform: translateY(-2px) scale(1.01);
 }
 
@@ -67,4 +69,4 @@
   margin: 12px 0 0 0;
   border-color: #43d675;
   opacity: 0.5;
-} 
+}
