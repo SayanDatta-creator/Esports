@@ -4,6 +4,7 @@ from routes import auth
 import uvicorn
 from fastapi import FastAPI
 from db import db
+from fastapi.middleware.cors import CORSMiddleware
 
 
 
@@ -23,7 +24,17 @@ async def lifespan(app: FastAPI):
     print("🔻 App shutting down...")
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all origins, adjust as needed
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods, adjust as needed
+    allow_headers=["*"],  # Allow all headers, adjust as needed
+)
 app.include_router(auth.router)
+
+
 
 
 if __name__ == "__main__":
